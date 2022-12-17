@@ -1,4 +1,4 @@
 Colana
-Python program
+<br>Python program
 Determining the color palette of an image
 Image matching by color pattern
