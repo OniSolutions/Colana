@@ -5,6 +5,27 @@ import matplotlib.pyplot as plt
 import numpy as np 
 import cv2
 
+"""Tkinner to generate windows for programm"""
+
+from tkinter import *
+from tkinter import ttk
+
+root = Tk()
+root.title("Colana")
+root.geometry("660x600") 
+ 
+def click():
+    window = Tk()
+    window.title("Colana Result")
+    window.geometry("660x660")
+ 
+button = ttk.Button(text="Open File", command=click)
+button.pack(anchor=CENTER, expand=1)
+ 
+root.mainloop()
+
+"""Main code"""
+
 image = cv2.imread('my_image.png') 
 image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
 
